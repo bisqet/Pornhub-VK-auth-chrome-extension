@@ -1,0 +1,53 @@
+{
+  "manifest_version": 2,
+  "name": "wpBot Rest",
+  "version": "1.0.0",
+  "version_name": "1.0.0",
+  "description": "АХТУНГ!!!!",
+  "icons": {
+    "16": "img/icon16.png",
+    "48": "img/icon48.png",
+    "128": "img/icon128.png"
+  },
+  "browser_action": {
+    "default_icon": {
+      "19": "img/icon16.png",
+      "38": "img/icon48.png"
+    },
+    "default_title": "wpBot",
+    "default_popup": "popup/popup.html"
+  },
+  "author": "GreenElephantt",
+  "background": {
+    "scripts":
+    [
+      "vendor/jquery.min.js",
+      "modules/router.js",
+      "modules/storageManager.js",
+      "modules/rnd.js",
+      "modules/xhrWp.js",
+      "modules/logger.js",
+      "modules/work.js",
+      "bg/bg.js"
+    ]
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://wp-game.com/*"],
+      "css": ["content/css.css"],
+      "js": ["content/content.js"]
+    }
+  ],
+  "homepage_url": "https://github.com/Green-Elephant/wpBot",
+  "options_page": "options/options.html",
+  "permissions":
+  [
+    "http://wp-game.com/*",
+    "https://oauth.vk.com/*",
+    "https://login.vk.com/*",
+    "https://github.com/Green-Elephant/wpBot/*",
+    "background",
+    "notifications",
+    "alarms"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "bootstrap-dropdown",
+  "homepage": "https://github.com/codemix/bootstrap-dropdown",
+  "_release": "674d25683b",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "674d25683bfcacd610dc8aca30f357e6bc7af539"
+  },
+  "_source": "https://github.com/codemix/bootstrap-dropdown.git",
+  "_target": "*",
+  "_originalSource": "bootstrap-dropdown",
+  "_direct": true
+}
