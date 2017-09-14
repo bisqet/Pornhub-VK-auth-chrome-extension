@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "Расширение для дрочева)0)0))",
+  "version": "1.0.0",
+  "description": "Позволяет посещать PornHub без авторизации ВК",
+  "author": "GreenElephantt",
+  "icons": {
+    "16": "img/icon-128.png",
+    "48": "img/icon-128.png",
+    "128": "img/icon-128.png"
+  },
+  "content_scripts": [
+    {
+      "matches" : ["*://*.pornhub.com/*"],
+      "run_at" : "document_idle",
+      "js": ["content/content.js"]
+    }
+  ],
+  "homepage_url": "https://vk.com/ge_tt",
+  "permissions":["*://*.pornhub.com/*"]
+}
