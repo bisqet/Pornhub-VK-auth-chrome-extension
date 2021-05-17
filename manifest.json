@@ -1,9 +1,9 @@
 {
   "manifest_version": 2,
   "name": "PornHub обход авторизации ВК",
-  "version": "1.0.0",
-  "description": "Позволяет посещать PornHub без авторизации ВК. Работает при входе в инкогнито.",
-  "author": "GreenElephantt",
+  "version": "1.1.0",
+  "description": "Позволяет посещать PornHub без авторизации ВК. Работает при входе в инкогнито. Убирает рекламу",
+  "author": "David Lukava",
   "icons": {
     "16": "img/icon-128.png",
     "48": "img/icon-128.png",
@@ -12,8 +12,8 @@
   "content_scripts": [
     {
       "matches" : ["*://*.pornhub.com/*"],
-      "run_at" : "document_idle",
-      "js": ["content/content.js"]
+      "run_at" : "document_start",
+      "js": ["content/adBlock.js"]
     }
   ],
   "homepage_url": "https://vk.com/ge_tt",
